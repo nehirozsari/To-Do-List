@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To‑Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>To‑Do List</h1>
+        <p>Complete tasks to make the kitten happier!</p>
+      </header>
+
+      <section class="kitten-section">
+        <div class="kitten-wrapper">
+          <div class="kitten" id="kitten">
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+            <div class="face">
+              <div class="eye eye-left"></div>
+              <div class="eye eye-right"></div>
+              <div class="cheek cheek-left"></div>
+              <div class="cheek cheek-right"></div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+              <div class="whiskers whiskers-left"></div>
+              <div class="whiskers whiskers-right"></div>
+            </div>
+            <div class="body"></div>
+            <div class="tail"></div>
+          </div>
+          <div class="happiness">
+            <div class="happiness-label">
+              Happiness: <span id="happiness-percent">0%</span>
+            </div>
+            <div class="happiness-bar">
+              <div class="happiness-fill" id="happiness-fill"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="todo-section">
+        <h2>Your Tasks</h2>
+        <form id="todo-form" class="todo-form">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Add a new task..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Add</button>
+        </form>
+        <ul id="todo-list" class="todo-list"></ul>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
