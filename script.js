@@ -113,3 +113,4 @@ form.addEventListener("submit", (event) => {
 // Initial state
 showOrHideEmptyState();
 updateHappiness();
+
